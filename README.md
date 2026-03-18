@@ -10,8 +10,8 @@ Research Domain
 Quantum Cybersecurity • Quantum ML • PQC
 Hardware Platform
 OriginQ WuKong • 72 Superconducting Qubits
-www.qaiss.io
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 1 of 24
+www.qaissecurity.com
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 1 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 TOC TABLE OF CONTENTS
@@ -46,7 +46,7 @@ Abstract 3
 10. Research Roadmap 2026–2030 21
 11. Conclusion 23
 References 24
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 2 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 2 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 — ABSTRACT
@@ -73,7 +73,7 @@ phased 2026–2030 research roadmap.
 Keywords: Quantum Computing • Post-Quantum Cryptography • Quantum ML • Anomaly
 Detection • QGAN • Autonomous Cybersecurity • QRNG • Blockchain Security • WuKong •
 NIST FIPS 203/204/205
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 3 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 3 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 1 INTRODUCTION & MOTIVATION
@@ -106,7 +106,7 @@ latency, formalized as a tamper-proof blockchain ledger.
 in August 2024 (ML-KEM, ML-DSA, SLH-DSA) with cryptographic agility for future algorithm transitions.
 5. A realistic phased 2026–2030 research and deployment roadmap grounded in current hardware
 capabilities and regulatory timelines.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 4 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 4 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 2 THREAT LANDSCAPE ANALYSIS
@@ -150,7 +150,7 @@ Inference pipelines processing sensitive PII, financial transactions, and strate
 intelligence operate without cryptographic integrity guarantees. Multi-agent AI
 communication channels, including implementations of the Model Context Protocol (MCP)
 [17], create inter-agent trust relationships with no established authentication standards.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 5 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 5 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 Federated learning presents a particularly acute threat surface: gradient exchanges across
@@ -172,7 +172,7 @@ architectures rely on SHA-256 and Keccak-256, which are weakened (though not bro
 by Grover's algorithm [21]. Post-quantum blockchain security therefore requires address
 scheme migration, signature algorithm replacement, and hash function security parameter
 upgrades — all of which QAISS addresses natively in its blockchain security layer.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 6 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 6 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 3 SYSTEM ARCHITECTURE OVERVIEW
@@ -211,7 +211,7 @@ classical PRNG provides fallback entropy generation, while quantum entropy is us
 whenever the WuKong hardware connection is available. This ensures operational
 continuity during quantum cloud outages without compromising the platform's core
 functionality.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 7 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 7 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 4 LAYER 1 — QUANTUM ENTROPY CORE
@@ -252,7 +252,7 @@ Cumulative Sums
 QAISS implements all three NIST post-quantum cryptography standards finalized in
 August 2024, providing a complete PQC solution covering key encapsulation, digital
 signatures, and hash-based signatures.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 8 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 8 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 4.2.1 ML-KEM / Kyber (FIPS 203) — Key Encapsulation
@@ -290,14 +290,14 @@ AlgorithmRegistry.get(alg) def encapsulate(self, public_key): return
 self.alg.encapsulate(public_key) def switch_algorithm(self, new_alg):
 # Hot-swap without application restart self.alg =
 AlgorithmRegistry.get(new_alg)
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 9 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 9 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 Algorithm switching can be triggered automatically by the self-healing layer (Layer 3) if
 entropy degradation or timing side-channel anomalies are detected, or manually by
 operators via the command dashboard (Layer 5). No application-layer code changes are
 required for an algorithm transition.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 10 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 10 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 5 LAYER 2 — AI NEURAL IMMUNE SYSTEM
@@ -342,7 +342,7 @@ immune system evolves even during periods with no real attacks. The generator ci
 G(θ) synthesizes synthetic network traffic patterns; the discriminator circuit D(φ) learns to
 distinguish synthetic from real traffic. The adversarial objective is:
 min_G max_D [ E[log D(x)] + E[log(1 - D(G(z)))] ] # x: real traffic samples # z:
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 11 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 11 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 random quantum state |z generated by QRNG (Layer 1) # G(z): synthetic traffic ⟩
@@ -376,7 +376,7 @@ Inference latency 8–12 ms 180–320 ms ~12 ms typical
 WuKong calls / hour N/A ~340 (triggered) ~340 (vs ~5,800 full)
 False positive rate 6.2% 1.8% 1.8% (quantum decides)
 Detection accuracy 87.4% 94.1% 94.1%
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 12 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 12 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 6 LAYER 3 — AUTONOMOUS SELF-HEALING
@@ -418,7 +418,7 @@ re-keying sequence is:
 8. Distribute new keys via ML-KEM-768 encapsulation to all legitimate session participants.
 9. Revoke all prior session keys by overwriting key slots with zeroed buffers and invalidating HSM key
 handles.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 13 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 13 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 10.Write re-keying event attestation to the blockchain immunity ledger with ML-DSA-65 signature.
@@ -443,7 +443,7 @@ The immunity propagation mechanism ensures that the same attack variant cannot
 succeed on any node in the network once it has been observed and characterized anywhere
 in the network. The blockchain commitment of the H value makes the vaccination record
 tamper-proof and auditable by any authorized node.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 14 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 14 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 7 LAYER 4 — BLOCKCHAIN SECURITY LAYER
@@ -481,7 +481,7 @@ corrupting the validator set.
 Platform access control, node operator registration, immunity record submission, and
 governance operations are managed through smart contracts deployed on the QAISS
 blockchain. The smart contract layer provides:
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 15 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 15 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 • Deterministic access rules — Organizational membership, API quotas, and permission levels are
@@ -491,7 +491,7 @@ vectors.
 public keys and operational commitments on-chain, creating a verifiable, auditable operator directory.
 • Audit trail — All access control changes, operator additions, and permission modifications are
 permanently recorded as on-chain transactions, satisfying SOC 2 and ISO 27001 audit requirements.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 16 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 16 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 8 LAYER 5 — COMMAND DASHBOARD
@@ -525,7 +525,7 @@ immunity ledger panel provides a searchable, paginated view of all blockchain im
 records, with block height, attack type, affected zones, response action, and ML-DSA
 signature verification status. All records are exportable as signed JSON for regulatory
 reporting and incident forensics.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 17 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 17 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 9 PERFORMANCE BENCHMARKS
@@ -565,7 +565,7 @@ Detection → Isolation
 trigger
 0.41 ms 0.47 ms 0.63 ms
 SDN rule injection 1.2 ms 1.8 ms 2.4 ms
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 18 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 18 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 Operation p50 Latency p95 Latency p99 Latency
@@ -617,7 +617,7 @@ security. ML-DSA signing is 2.9× slower than ECDSA P-256 — an acceptable perf
 trade-off given the security guarantee against quantum adversaries. Key and signature
 sizes are larger than classical equivalents, a known characteristic of current PQC
 standards.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 19 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 19 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 10 RESEARCH ROADMAP 2026–2030
@@ -679,7 +679,7 @@ vectors, and deployment of the cryptographic agility framework. Estimated WuKong
 executions: 400–600.
 Publication target: 'Certified Quantum Entropy Generation on 72-Qubit Superconducting
 Hardware for Cybersecurity Applications' — IEEE Quantum Week 2026.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 20 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 20 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 10.2 Phase 2 — AI Neural Immune System (Q3–Q4 2026)
@@ -714,10 +714,10 @@ enabling external security vendors to submit immunity records to the ledger, est
 academic research consortium, and submit the complete platform to formal security
 verification. Target: recognized as a foundational reference architecture for quantum-era
 cybersecurity by NIST, ENISA, or equivalent standards body.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 21 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 21 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 22 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 22 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 11 CONCLUSION
@@ -744,7 +744,7 @@ records power network-wide learning. This is not a collection of security techno
 is a single self-improving security organism. The immune system model is not merely
 metaphorical. It is a proven architecture for autonomous defense at scale, and QAISS is its
 digital instantiation.
-QAISS Technical Whitepaper v1.0 • www.qaiss.io • March 2026 • Page 23 of 24
+QAISS Technical Whitepaper v1.0 • www.qaissecurity.com • March 2026 • Page 23 of 24
 QAISS — Technical Whitepaper v1.0 Origin WuKong • 72-Qubit
 Superconducting
 REF REFERENCES
